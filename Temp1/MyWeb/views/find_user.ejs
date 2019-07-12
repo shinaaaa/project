@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="javascripts/my_find_user.js"></script>
+    <link rel="stylesheet" href="stylesheets/find_user.css" type="text/css">
+    <title>Find IP/PW</title>
+</head>
+
+<body>
+    <!-- find -->
+    <div id="find">
+        <!-- find_Content -->
+        <div class="find_Content">
+            <!-- find_form -->
+            <div class="find_form">
+                <div style="text-align: center">
+                    <p style="font-size: 14pt; margin-left: 50px; display: inline-block;">Find</p>
+                    <img type="button" id="close" style="float: right;" src="images/btn_cancle.png" />
+                </div>
+                <%
+                if(findState) {
+                %>
+                    <p>사업자 번호 :
+                        <%= findbusiness_num %>
+                    </p>
+                    <p>아이디 :
+                        <%= findid %>
+                    </p>
+                    <p>비밀번호 :
+                        <%= findpw %>
+                    </p>
+                    <button type="button" id="close_btn">Close</button>
+                    <%
+                } else {
+                %>
+                        <input type="text" id="find_business_num" placeholder="사업자번호"><br>
+                        <button type="button" id="find_btn">Find</button>
+                        <%
+                }
+                %>
+            </div>
+            <!-- find_form -->
+        </div>
+        <!-- find_Content -->
+    </div>
+    <!-- find -->
+</body>
+
+</html>

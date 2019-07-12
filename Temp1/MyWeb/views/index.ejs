@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="javascripts/my.js"></script>
+    <script src="javascripts/my_find.js"></script>
+    <link rel="stylesheet" href="stylesheets/index.css" type="text/css">
+
+    <title>원산지 증명센터</title>
+
+</head>
+
+<body>
+    <!-- container -->
+    <div class="container">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <img src="images/img_logo.png" style="margin: 20px;">
+            <!-- menu -->
+            <div class="menu">
+                <ul>
+                    <li><a href="">무역인증안내</a></li>
+                    <li><a href="">원산지증명서</a></li>
+                    <li><a href="">기타무역인증</a></li>
+                    <li><a href="">ATA까르네</a></li>
+                    <li><a href="">마이페이지</a></li>
+                    <li><a href="">고객지원</a></li>
+                    <li><a href="">양식 및 견본</a></li>
+                </ul>
+            </div>
+            <!-- menu -->
+        </div>
+        <!-- sidebar -->
+
+        <!-- main -->
+        <div class="main">
+            <!-- toolbar -->
+            <div class="toolbar">
+                <ul>
+                    <li><a href="">로그인</a></li>
+                    <li><a href="">사용자 등록</a></li>
+                    <li><a href="">서명 등록</a></li>
+                    <li><a href="">ENG</a></li>
+                    <li><a href="">사이트맵</a></li>
+                    <li><a href="">ActiveXLogin</a></li>
+                </ul>
+            </div>
+            <!-- toolbar -->
+
+            <!-- manubar -->
+            <div class="menubar">
+                <!-- search -->
+                <div class="search">
+                    <input type="text" id="search_val" placeholder="제품코드">
+                    <img id="search_btn" src="images/btn_search.png" />
+                </div>
+                <!-- search -->
+
+                <!-- main_menu -->
+                <div class="main_menu">
+                    <img id="confirm" src="images/btn_confirm.png">
+                    <img id="menual" src="images/btn_menual.png" />
+                </div>
+                <!-- main_menu -->
+            </div>
+            <!-- manubar -->
+
+            <!-- contents -->
+            <div class="contents">
+                <!-- banner -->
+                <div class="banner">
+                    <div class="banner_img" style="z-index: 10; position: absolute;">
+                        <img id="bannerimg" src="images/img_banner_01.png" />
+                    </div>
+                    <!-- banner_txt -->
+                    <div class="banner_txt" style="z-index: 12; position: absolute;">
+                        <p style="font-size: 27px;">원산지증명</p>
+                        <p style="font-size: 17px; margin-top: 0px; margin-bottom: 2px;">수출물품이 우리나라에서</p>
+                        <p style="font-size: 17px; margin-top: 0px; margin-bottom: 2px;">재배, 사육 제조 가공된 것임을 증명하는 문서</p>
+                        <p style="font-size: 17px; margin-top: 0px; margin-bottom: 2px;">*무역인증 서비스를 이용하려면 공인인증서 반드시 필요</p>
+                        <div class="banner_btn">
+                            <p>자세히 보기</p>
+                            <img src="images/btn_banner_more.png" style="float: right;" />
+                        </div>
+                    </div>
+                    <!-- banner_txt -->
+                </div>
+                <!-- banner -->
+                <%
+                if(loginState) {
+                %>
+                    <!-- logout_form -->
+                    <div class="logout_form">
+                        <p style="margin-top: 50px; margin-bottom: 0px;">Welcome!</p>
+                        <p style="margin-top: 0px; margin-bottom: 40px;">Have good day!</p>
+                        <img src="images/img_login_profile.png">
+                        <p style="text-align: center; margin-left: 0px; margin-top: 20px; margin-bottom: 20px;">
+                            <%= login_id  %>
+                        </p>
+                        <button type="button" id="Product_registration">Product registration</button>
+                        <button type="button" id="logout_btn">Logout</button>
+                    </div>
+                    <!-- logout_form -->
+                    <%
+                } else {
+                %>
+                        <!-- login_form -->
+                        <div class="login_form">
+                            <p style="font-size: 14pt; text-align: left; margin-top: 30px; margin-left: 30px;">Login</p>
+                            <input type="text" id="business_num" placeholder="사업자번호"><br>
+                            <input type="text" id="login_id" placeholder="아이디"><br>
+                            <input type="password" id="login_pw" placeholder="비밀번호"><br>
+                            <button type="button" id="login_btn">Login</button>
+                            <button type="button" id="main_find_btn" class="main_find">Find ID/PW</button>
+                            <p style="color: #E7E8E9">_______________________________________________</p>
+                            <p style="font-size: 14pt; text-align: left; margin-left: 30px; margin-bottom: 10px;">사용자 등록</p>
+                            <p style="font-size: 10pt; text-align: left; margin-left: 30px;">서명등록 업체만 사용자 등록을 할 수 있습니다.</p>
+                            <button type="button" id="main_join_btn" onclick="location.href='#join'" class="main_join">Join</button>
+                        </div>
+                        <!-- login_form -->
+                        <%
+                }
+                %>
+            </div>
+            <!-- contents -->
+
+            <!-- notice -->
+            <div class="notice">
+                <div class="notice_bar">
+                    <p>공지사항</p>
+                    <p>교육</p>
+                    <p>지방상의 소식</p>
+                    <img src="images/btn_list_add.png" style="float: right">
+                </div>
+                <div class="notice_list">
+                    <ul>
+                        <li>
+                            <a href="">관세청, 수출물품 원산지 사전확인 사업 실시 안내</a>
+                            <p>2019.06.28</p>
+                        </li>
+                        <li>
+                            <a href="">관세청 「원산지조사 운영에 관한 훈련」개정․시행(2019.6.19.) 안내</a>
+                            <p>2019.06.24</p>
+                        </li>
+                        <li>
+                            <a href="">비특혜 수출물품에 대한 원산지검증 대응방안 설명회(5/30 개최) 자료입니다.</a>
+                            <p>2019.06.10</p>
+                        </li>
+                        <li>
+                            <a href="">한-중 FTA 세트물품 원산지증명서 신청 시 유의사항 안내</a>
+                            <p>2019.04.30</p>
+                        </li>
+                        <li>
+                            <a href="">상공회의소 서명권자 증빙요청에 대한 처리 방법 안내</a>
+                            <p>2019.04.10</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- notice -->
+
+            <!-- foot -->
+            <div class="foot">
+                <div style="border-right:1px solid #000;">
+                    <img src="images/ic_search.png">
+                    <p>FTA 협정세율 조회</p>
+                </div>
+                <div style="border-right:1px solid #000;">
+                    <img src="images/ic_notice.png">
+                    <p>FTA 원산지증명발급절차</p>
+                </div>
+                <div style="border-right:1px solid #000;">
+                    <img src="images/ic_doc.png">
+                    <p>원산지 입증서류 안내</p>
+                </div>
+                <div>
+                    <img src="images/ic_warning.png">
+                    <p>처음 오셨어요?</p>
+                </div>
+            </div>
+            <!-- foot -->
+
+        </div>
+        <!-- main -->
+
+    </div>
+    <!-- container -->
+
+    <!-- join -->
+    <div id="join">
+        <!-- join_Content -->
+        <div class="join_Content">
+            <!-- join_form -->
+            <div class="join_form">
+                <div style="text-align: center">
+                    <p style="font-size: 14pt; margin-left: 50px; display: inline-block;">Join</p>
+                    <img id="close" style="float: right;" src="images/btn_cancle.png" />
+                </div>
+                <input type="text" id="join_business_num" placeholder="사업자번호"><br>
+                <input type="text" id="join_id" placeholder="아이디"><br>
+                <input type="password" id="join_pw" placeholder="비밀번호"><br>
+                <button type="button" id="join_btn">Join</button>
+            </div>
+            <!-- join_form -->
+        </div>
+        <!-- join_Content -->
+    </div>
+    <!-- join -->
+</body>
+
+</html>

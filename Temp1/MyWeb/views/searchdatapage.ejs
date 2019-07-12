@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="javascripts/my_find.js"></script>
+    <link rel="stylesheet" href="stylesheets/find.css" type="text/css">
+    <title>제품결과</title>
+</head>
+
+<body>
+    <!-- find -->
+    <div id="find">
+        <!-- find_Content -->
+        <div class="find_Content">
+            <!-- find_form -->
+            <div class="find_form">
+                <div style="text-align: center">
+                    <p style="font-size: 14pt; margin-left: 50px; display: inline-block;">원산지 증명서</p>
+                    <img type="button" id="close" style="float: right;" src="images/btn_cancle.png" />
+                </div>
+                <p>제품 코드 :
+                    <%= find_db_product %>
+                </p>
+                <p>원산지 :
+                    <%= find_db_origin %>
+                </p>
+                <p>제조일자 :
+                    <%= find_db_Date_of_Manufacture %>
+                </p>
+                <button type="button" id="close_btn">Close</button>
+            </div>
+            <!-- find_form -->
+        </div>
+        <!-- find_Content -->
+    </div>
+    <!-- find -->
+</body>
+
+</html>

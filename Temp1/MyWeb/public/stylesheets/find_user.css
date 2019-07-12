@@ -1,0 +1,62 @@
+    #find input {
+        border-top: 0;
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+        outline: none;
+    }
+    
+    #find button {
+        border-top: 0;
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+        outline: none;
+    }
+    
+    .find_form {
+        padding: 10px;
+        color: #fff;
+        width: 320px;
+        height: 490px;
+        background-color: #2C54BB;
+        border-radius: 25px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .find_form input {
+        width: 245px;
+        height: 40px;
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        border-radius: 15px;
+    }
+    
+    .find_form #find_btn {
+        display: inline-block;
+        background-color: #FFF;
+        font-size: 12px;
+        margin-top: 10px;
+        border-radius: 15px;
+        width: 250px;
+        height: 35px;
+    }
+    
+    #find .find_Content .find_form div {
+        margin: 10px;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+    }
+    
+    .find_form #close_btn {
+        display: inline-block;
+        background-color: #FFF;
+        font-size: 12px;
+        margin-top: 10px;
+        border-radius: 15px;
+        width: 250px;
+        height: 35px;
+    }

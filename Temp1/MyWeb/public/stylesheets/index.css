@@ -1,0 +1,346 @@
+.container {
+    margin-left: 125px;
+    display: flex;
+    width: 1280px;
+    height: auto;
+}
+
+.container input {
+    outline: none;
+}
+
+.container button {
+    outline: none;
+}
+
+.sidebar {
+    height: auto;
+    width: auto;
+    background-color: #EBEEF1;
+}
+
+.main {
+    width: 70%;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.toolbar {
+    float: right;
+    margin-bottom: 20px;
+}
+
+.toolbar ul {
+    display: flex;
+}
+
+.toolbar ul li {
+    margin-left: 10px;
+}
+
+.menu {
+    width: 200px;
+    height: 900px;
+    text-align: center;
+}
+
+.menu ul {
+    padding: 0px;
+}
+
+.menu ul li {
+    display: block;
+    margin-top: 50px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+.menubar {
+    width: 901px;
+    display: inline-block;
+}
+
+.menubar .main_menu {
+    float: right;
+    margin-bottom: 60px;
+}
+
+.search {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.search input {
+    width: 530px;
+    font-size: 20px;
+    float: left;
+    text-align: center;
+    padding-bottom: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: 3px;
+    border-bottom-color: #000;
+}
+
+.search img {
+    margin-left: -50px;
+    margin-top: -20px;
+}
+
+.contents {
+    display: flex;
+}
+
+.banner {
+    height: 490px;
+    width: 570px;
+    margin-right: 40px;
+    border-radius: 25px;
+}
+
+.banner img {
+    text-align: left;
+}
+
+.banner .banner_txt {
+    text-align: left;
+    margin: 60px;
+}
+
+.banner_btn {
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 25px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.banner_btn p {
+    margin-top: 11px;
+    margin-bottom: 0px;
+    margin-left: -20px;
+}
+
+.banner_btn img {
+    margin-top: -25px;
+    margin-right: 10px;
+}
+
+.login_form {
+    color: #fff;
+    width: 320px;
+    height: 490px;
+    background-color: #2A4480;
+    border-radius: 25px;
+}
+
+.login_form input {
+    width: 245px;
+    height: 40px;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 15px;
+}
+
+.login_form button {
+    display: inline-block;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 12px;
+    margin-top: 10px;
+    border-radius: 15px;
+    width: 115px;
+    height: 35px;
+}
+
+#login_btn {
+    margin-right: 10px;
+    background-color: #E8CFB4;
+}
+
+#find_id {
+    background-color: #E7E8E9;
+}
+
+#logout_btn {
+    float: left;
+}
+
+#Product_registration {
+    float: left;
+}
+
+.logout_form {
+    color: #fff;
+    width: 320px;
+    height: 490px;
+    background-color: #2A4480;
+    border-radius: 25px;
+}
+
+.logout_form p {
+    font-size: 19pt;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.logout_form button {
+    height: 35px;
+    width: 245px;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 25px;
+    background-color: #FFF;
+}
+
+.notice {
+    background-color: #F3F4F5;
+    text-align: left;
+    height: 340px;
+    width: 900px;
+    margin-top: 40px;
+    border-radius: 25px;
+    padding-top: 30px;
+}
+
+.notice .notice_bar {
+    margin-left: 50px;
+    width: 800px;
+    tab-size: 14px;
+    border-bottom: 1px solid #adacacc0;
+}
+
+.notice .notice_bar p {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.notice ul {
+    width: 800px;
+    margin-left: 10px;
+}
+
+.notice ul li {
+    display: block;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #adacacc0;
+}
+
+.foot {
+    background-color: #BBBBBA;
+    border-radius: 25px;
+    margin-top: 40px;
+    width: 920px;
+    height: 130px;
+}
+
+.foot div {
+    display: inline-block;
+    height: 80px;
+    width: 210px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.notice_list ul li p {
+    float: right;
+    margin-top: 0px;
+    color: #BBBBBA;
+    font-size: 11pt;
+}
+
+#join {
+    display: none;
+    position: relative;
+    z-index: 14;
+}
+
+#join input {
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+}
+
+#join .join_Content {
+    width: 600px;
+    height: 500px;
+    padding: 30px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+}
+
+#main_join_btn {
+    background-color: #F0937F;
+    width: 250px;
+    height: 35px;
+}
+
+.join_form {
+    padding: 10px;
+    color: #fff;
+    width: 320px;
+    height: 490px;
+    background-color: #2C54BB;
+    border-radius: 25px;
+    text-align: center;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+.join_form input {
+    width: 245px;
+    height: 40px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 15px;
+}
+
+#join button {
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.join_form #join_btn {
+    display: inline-block;
+    background-color: #EF927E;
+    font-size: 12px;
+    margin-top: 10px;
+    border-radius: 15px;
+    width: 250px;
+    height: 35px;
+    outline: none;
+}
+
+#join .join_Content .join_form div {
+    margin: 10px;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
